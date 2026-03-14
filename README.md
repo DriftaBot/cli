@@ -1,4 +1,4 @@
-# @driftabot/agent Homebrew Tap
+# DriftaBot CLI
 
 This is the official Homebrew tap for [@driftabot/agent](https://github.com/DriftaBot/agent), the LangGraph-powered agent that detects breaking API changes in provider PRs and automatically opens GitHub Issues in affected consumer repos.
 
