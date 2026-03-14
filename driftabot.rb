@@ -5,21 +5,21 @@
 class Driftabot < Formula
   desc "Schema diff engine that detects breaking vs. non-breaking API contract changes across OpenAPI, GraphQL, and gRPC schemas."
   homepage "https://github.com/DriftaBot/cli"
-  version "6.0.0"
+  version "6.0.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/DriftaBot/engine/releases/download/v6.0.0/driftabot_darwin_amd64.tar.gz"
-      sha256 "81699b91107f67b626823d7c365fe1d1a5a77c3d344ff4d23ea2f36634a80816"
+      url "https://github.com/DriftaBot/engine/releases/download/v6.0.1/driftabot_darwin_amd64.tar.gz"
+      sha256 "42af6735588bf0ed80ef182f0f310fc59ff0cc9bf53295c14b7bde0890dd4c2c"
 
       define_method(:install) do
         bin.install "driftabot"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/DriftaBot/engine/releases/download/v6.0.0/driftabot_darwin_arm64.tar.gz"
-      sha256 "4aa8ecf8e711dc1f95a39703fd6f791261f11cf181809eef27197f7a572fcc21"
+      url "https://github.com/DriftaBot/engine/releases/download/v6.0.1/driftabot_darwin_arm64.tar.gz"
+      sha256 "18443ee2dd2f7f26f510534321f96d578bcc8c3f0cac473f3a276513b6b4c1d3"
 
       define_method(:install) do
         bin.install "driftabot"
@@ -29,15 +29,15 @@ class Driftabot < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/DriftaBot/engine/releases/download/v6.0.0/driftabot_linux_amd64.tar.gz"
-      sha256 "394017e9f8893d72d9842b5f0378fdd0b87d0ba8459a916a0aa05b68261f5567"
+      url "https://github.com/DriftaBot/engine/releases/download/v6.0.1/driftabot_linux_amd64.tar.gz"
+      sha256 "6f040ea497347e503d06b3a99e8d0b16fdd707c2d776c6aab3b8a1dde3f5cbbd"
       define_method(:install) do
         bin.install "driftabot"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/DriftaBot/engine/releases/download/v6.0.0/driftabot_linux_arm64.tar.gz"
-      sha256 "79d197a672da1af20bce9bde8dd6221303aae550f8d1767fba01b8c6db385f13"
+      url "https://github.com/DriftaBot/engine/releases/download/v6.0.1/driftabot_linux_arm64.tar.gz"
+      sha256 "cb5374ac090c3378926a590d7bc41b6ba456258de9974a49ce342fbbecc717ab"
       define_method(:install) do
         bin.install "driftabot"
       end
