@@ -2,9 +2,17 @@
 
 ## Installation
 
+**Homebrew**
+
 ```bash
 brew tap DriftaBot/cli
 brew install driftabot
+```
+
+**Go**
+
+```bash
+go install github.com/DriftaBot/agent@latest
 ```
 
 ## Usage
