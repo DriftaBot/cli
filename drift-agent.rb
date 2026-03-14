@@ -5,21 +5,21 @@
 class DriftAgent < Formula
   desc "Schema diff engine that detects breaking vs. non-breaking API contract changes across OpenAPI, GraphQL, and gRPC schemas."
   homepage "https://github.com/DriftAgent/api-drift-engine"
-  version "5.2.0"
+  version "5.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/DriftAgent/api-drift-engine/releases/download/v5.2.0/drift-agent_darwin_amd64.tar.gz"
-      sha256 "688709ccef03a0704a0ec3a956608022fd4da29c8cf0333560a084451c67cc7a"
+      url "https://github.com/DriftAgent/api-drift-engine/releases/download/v5.3.0/drift-agent_darwin_amd64.tar.gz"
+      sha256 "083814d7be0ce48e4150469302947afef808ae7846b7caca325763f38d4ab894"
 
       define_method(:install) do
         bin.install "drift-agent"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/DriftAgent/api-drift-engine/releases/download/v5.2.0/drift-agent_darwin_arm64.tar.gz"
-      sha256 "6ff6270dbe4eb9d9d650b67c260363e9aaad0d3fe7233fa337932235a5742ca6"
+      url "https://github.com/DriftAgent/api-drift-engine/releases/download/v5.3.0/drift-agent_darwin_arm64.tar.gz"
+      sha256 "b36eab30f883ba459a78264d67d720eb0c02294fb176c5aa0144b61d71a3f847"
 
       define_method(:install) do
         bin.install "drift-agent"
@@ -29,15 +29,15 @@ class DriftAgent < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/DriftAgent/api-drift-engine/releases/download/v5.2.0/drift-agent_linux_amd64.tar.gz"
-      sha256 "003b6654b3aac790d221d7701deecfff1b6d5da57d1d6ec9c7a834ca6c533a34"
+      url "https://github.com/DriftAgent/api-drift-engine/releases/download/v5.3.0/drift-agent_linux_amd64.tar.gz"
+      sha256 "64e19eb0f2b2a0d18eaf25a5db8598f659dc34ff1e507a2db96ffc95e970fa71"
       define_method(:install) do
         bin.install "drift-agent"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/DriftAgent/api-drift-engine/releases/download/v5.2.0/drift-agent_linux_arm64.tar.gz"
-      sha256 "457e0739900eac97f145257665676794d3eaa4be37953de721fe8f4047c67d7d"
+      url "https://github.com/DriftAgent/api-drift-engine/releases/download/v5.3.0/drift-agent_linux_arm64.tar.gz"
+      sha256 "7d9cd8190a25304820b04af20b54ea053dbab02be9ab5b9ef97824339edd5a3e"
       define_method(:install) do
         bin.install "drift-agent"
       end
