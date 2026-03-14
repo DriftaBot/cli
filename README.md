@@ -1,35 +1,24 @@
-# DriftAgent Homebrew Tap
+# DriftaBot CLI Homebrew Tap
 
-This is the official Homebrew tap for [drift-guard](https://github.com/DriftAgent/api-drift-engine), the schema diff engine powering [API Drift Agent](https://github.com/DriftAgent/api-drift-agent).
+This is the official Homebrew tap for [DriftaBot Agent](https://github.com/DriftaBot/agent), the LangGraph-powered agent that detects breaking API changes in provider PRs and automatically opens GitHub Issues in affected consumer repos.
 
 ## Installation
 
-To install drift-guard using Homebrew, first add this tap:
-
 ```bash
-brew tap DriftAgent/tap
-```
-
-Then install drift-guard:
-
-```bash
-brew install drift-guard
+brew tap DriftaBot/cli
+brew install driftabot
 ```
 
 ## Usage
 
-After installation, you can run drift-guard from the command line:
+After installation, you can run driftabot from the command line:
 
 ```bash
-drift-guard --help
+driftabot --help
 ```
 
-For more information, visit the [main repository](https://github.com/DriftAgent/api-drift-engine).
-
-## Contributing
-
-Contributions are welcome! Please see the [main repository](https://github.com/DriftAgent/api-drift-engine) for contribution guidelines.
+For more information, visit the [main repository](https://github.com/DriftaBot/agent).
 
 ## License
 
-drift-guard is licensed under the MIT License. See the [main repository](https://github.com/DriftAgent/api-drift-engine) for details.
+Licensed under the MIT License. See the [main repository](https://github.com/DriftaBot/agent) for details.
