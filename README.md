@@ -1,6 +1,6 @@
 # DriftAgent Homebrew Tap
 
-This is the official Homebrew tap for [drift-guard](https://github.com/DriftAgent/api-drift-engine), a schema diff engine that detects breaking vs. non-breaking API contract changes across OpenAPI, GraphQL, and gRPC schemas.
+This is the official Homebrew tap for [drift-guard](https://github.com/DriftAgent/api-drift-engine), the schema diff engine powering [API Drift Agent](https://github.com/DriftAgent/api-drift-agent).
 
 ## Installation
 
